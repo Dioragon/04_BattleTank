@@ -34,7 +34,19 @@ void ATankPlayerController::AimTowardsCrosshair()
 {
     if (!GetControlledTank()) {return;}
 
-    //Get wolrd location if linetrace trhough crosshair
-    //if it hits the landscape
-        //Aim at point
+    FVector HitLocation;
+    if (GetSightRayHitLocation(HitLocation))
+    {
+        UE_LOG(LogTemp, Warning, TEXT("HitLocation: %s"), *HitLocation.ToString());
+        //Tell controlled tank to aim at this point
+   
+    }
+    
+}
+
+//Get wolrd location of linetrace trhough crosshair, true if it hits landscape
+bool ATankPlayerController::GetSightRayHitLocation(FVector& HitLocation) const
+{
+    HitLocation = FVector(1.0);
+    return true;
 }
