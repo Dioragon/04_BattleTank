@@ -1,5 +1,6 @@
 // Copyright Diogo Ribeiro 2020
 
+#include "Tank.h"
 #include "Engine/World.h"
 #include "TankPlayerController.h"
 
