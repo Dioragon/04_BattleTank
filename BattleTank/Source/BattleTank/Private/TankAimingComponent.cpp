@@ -1,6 +1,7 @@
 // Copyright Diogo Ribeiro 2020
 
 #include "Kismet/GameplayStatics.h"
+#include "TankBarrel.h"
 #include "TankAimingComponent.h"
 
 // Sets default values for this component's properties
@@ -13,12 +14,12 @@ UTankAimingComponent::UTankAimingComponent()
 	// ...
 }
 
-void UTankAimingComponent::SetBarrelReference(UStaticMeshComponent* BarrelToSet)
+void UTankAimingComponent::SetBarrelReference(UTankBarrel* BarrelToSet)
 {
 	Barrel = BarrelToSet;
 }
 
-// void SetTurretReference(UStaticMeshComponent* TurretToSet)
+// void SetTurretReference(UTankBarrel* TurretToSet)
 // {
 // 	Turret = TurretToSet;
 // }
@@ -53,5 +54,5 @@ void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 	auto AimAtRotator = AimDirection.Rotation();
 	auto DeltaRotator = AimAtRotator - BarrelRotator;
 
-	//Move barrel
+	Barrel->Elevate(5); //TODO remove magic number
 }
