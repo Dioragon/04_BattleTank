@@ -7,6 +7,7 @@
 #include "Tank.generated.h"
 
 //Forward declarations
+class UTankTurret;
 class UTankBarrel;
 class UTankAimingComponent;
 
@@ -23,6 +24,9 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	void AimAt(FVector HitLocation);
+
+	UFUNCTION(BlueprintCallable, Category = Setup)
+	void SetTurretReference(UTankTurret* TurretToSet);
 
 	UFUNCTION(BlueprintCallable, Category = Setup)
 	void SetBarrelReference(UTankBarrel* BarrelToSet);
