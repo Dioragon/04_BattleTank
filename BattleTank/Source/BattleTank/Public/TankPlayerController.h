@@ -6,10 +6,11 @@
 #include "GameFramework/PlayerController.h"
 #include "TankPlayerController.generated.h"
 
+class ATank;
+
 /**
  * 
  */
-class ATank;
 
 UCLASS()
 class BATTLETANK_API ATankPlayerController : public APlayerController

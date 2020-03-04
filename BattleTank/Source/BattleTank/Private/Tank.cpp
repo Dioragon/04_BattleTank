@@ -1,6 +1,6 @@
 // Copyright Diogo Ribeiro 2020
 
-
+#include "TankAimingComponent.h"
 #include "Tank.h"
 
 // Sets default values

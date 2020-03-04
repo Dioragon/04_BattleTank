@@ -1,7 +1,7 @@
 // Copyright Diogo Ribeiro 2020
 
-#include "Tank.h"
 #include "Engine/World.h"
+#include "Tank.h"
 #include "TankPlayerController.h"
 
 void ATankPlayerController::BeginPlay()
