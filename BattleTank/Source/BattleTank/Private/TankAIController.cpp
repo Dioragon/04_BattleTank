@@ -7,6 +7,7 @@
 void ATankAIController::BeginPlay()
 {
     Super::BeginPlay();
+    
 }
 
 void ATankAIController::Tick(float DeltaTime)
@@ -16,11 +17,11 @@ void ATankAIController::Tick(float DeltaTime)
     auto PlayerTank = Cast<ATank>(GetWorld()->GetFirstPlayerController()->GetPawn());
     auto ControlledTank = Cast<ATank>(GetPawn());
 
-    if (PlayerTank)
+    if (PlayerTank && ControlledTank)
     {
         //TODO Move towards the player
         ControlledTank->AimAt(PlayerTank->GetActorLocation());
-        
-        ControlledTank->Fire(); //TODO limit firing range
+
+        ControlledTank->Fire();
     }
 }
