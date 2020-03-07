@@ -33,7 +33,7 @@ class BATTLETANK_API ATankPlayerController : public APlayerController
 		float CrosshairXLocation = 0.5f;
 
 		UPROPERTY(EditDefaultsOnly)
-		float CrosshairYLocation = 0.3333f;
+		float CrosshairYLocation = 0.4f;
 
 		UPROPERTY(EditDefaultsOnly)
 		float LineTraceRange = 1000000.f;
