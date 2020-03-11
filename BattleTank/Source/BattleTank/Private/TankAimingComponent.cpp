@@ -1,9 +1,9 @@
 // Copyright Diogo Ribeiro 2020
 
+#include "TankAimingComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "TankTurret.h"
 #include "TankBarrel.h"
-#include "TankAimingComponent.h"
 
 // Sets default values for this component's properties
 UTankAimingComponent::UTankAimingComponent()

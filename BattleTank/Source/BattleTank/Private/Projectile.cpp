@@ -1,7 +1,7 @@
 // Copyright Diogo Ribeiro 2020
 
-#include "Engine/World.h"
 #include "Projectile.h"
+#include "Engine/World.h"
 
 // Sets default values
 AProjectile::AProjectile()

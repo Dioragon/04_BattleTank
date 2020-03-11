@@ -1,7 +1,7 @@
 // Copyright Diogo Ribeiro 2020
 
-#include "Math/UnrealMathUtility.h"
 #include "TankBarrel.h"
+#include "Math/UnrealMathUtility.h"
 
 void UTankBarrel::Elevate(float RelativeSpeed)
 {

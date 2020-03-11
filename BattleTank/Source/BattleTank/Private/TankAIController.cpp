@@ -1,8 +1,8 @@
 // Copyright Diogo Ribeiro 2020
 
+#include "TankAIController.h"
 #include "Engine/World.h"
 #include "Tank.h"
-#include "TankAIController.h"
 
 void ATankAIController::BeginPlay()
 {
