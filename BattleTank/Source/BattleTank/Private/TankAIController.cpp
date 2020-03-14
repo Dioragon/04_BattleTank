@@ -24,6 +24,6 @@ void ATankAIController::Tick(float DeltaTime)
 
         ControlledTank->AimAt(PlayerTank->GetActorLocation());
 
-        // ControlledTank->Fire(); //Currently commented to focus on Player1 movement
+        ControlledTank->Fire(); //Comment to focus on Player1 movement
     }
 }
