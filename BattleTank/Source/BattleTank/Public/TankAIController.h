@@ -22,5 +22,5 @@ public:
 
 private:
 	//How close can the AI Tank get;
-	float AcceptanceRadius;
+	float AcceptanceRadius = 3000;
 };
