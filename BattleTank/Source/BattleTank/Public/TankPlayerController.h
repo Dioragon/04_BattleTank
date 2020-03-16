@@ -24,7 +24,7 @@ class BATTLETANK_API ATankPlayerController : public APlayerController
 	protected:
 		UFUNCTION(BlueprintCallable, Category = "Setup")
 		ATank* GetControlledTank() const;
-		
+
 	private:
 		void AimTowardsCrosshair();
 		bool GetSightRayHitLocation(FVector& HitLocation) const;
